@@ -68,7 +68,7 @@
     @keyframes blinkDot { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
     h1 {
-      font-size: clamp(2.4rem, 5.2vw, 5rem);
+      font-size: clamp(2rem, 4.2vw, 4.2rem);
       font-weight: 800; line-height: 1.05; letter-spacing: -0.03em;
       margin-bottom: 1.2rem; white-space: nowrap;
       opacity: 0; animation: fadeUp 0.7s ease 0.4s forwards;
@@ -116,7 +116,7 @@
 
     /* ORBIT SYSTEM */
     .orbit-system {
-      position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+      position: absolute; right: 5%; top: 38%; transform: translateY(-50%);
       width: min(450px, 40vw); height: min(450px, 40vw);
       display: flex; align-items: center; justify-content: center;
       z-index: 2; opacity: 0; animation: fadeUp 1s ease 1.5s forwards;
@@ -484,8 +484,8 @@
       <div class="skill-card fade-in">
         <div class="skill-icon" style="background:rgba(123,97,255,0.12)">🏗️</div>
         <div>
-          <div class="skill-title">Terraform</div>
-          <div class="skill-sub">Infrastructure as Code</div>
+          <div class="skill-title">IaC</div>
+          <div class="skill-sub">Terraform · OpenTofu</div>
         </div>
       </div>
 
@@ -526,14 +526,8 @@
       </div>
 
       <!-- CI/CD -->
-      <div class="skill-card fade-in">
-        <div class="skill-icon" style="background:rgba(255,80,80,0.10)">🔁</div>
-        <div>
-          <div class="skill-title">CI/CD Pipelines</div>
-          <div class="skill-sub">Jenkins · GitHub Actions · ArgoCD</div>
-        </div>
-      </div>
-
+            <div class="skill-card fade-in"><div class="skill-icon" style="background:rgba(0,255,157,0.08)">🔐</div><div><div class="skill-title">Security &amp; IAM</div><div class="skill-sub">WAF · GuardDuty · IAM Policies</div></div></div>
+      <div class="skill-card fade-in"><div class="skill-icon" style="background:rgba(255,80,80,0.10)">📦</div><div><div class="skill-title">Ansible</div><div class="skill-sub">Configuration Management · Automation</div></div></div>
     </div>
   </div>
 </section>
@@ -543,7 +537,7 @@
 <section id="projects">
   <div class="section-inner">
     <div class="section-label">// open source</div>
-    <h2 class="section-title">GitHub <span>Projects</span></h2>
+    <h2 class="section-title"><span>Projects</span></h2>
 
     <div id="projects-grid" class="projects-grid">
       <div class="projects-loading">
@@ -731,6 +725,13 @@
       desc: 'Production-grade Kubernetes deployment with Ingress controller configuration, service routing, TLS termination, and rolling update strategies.',
       tags: ['Kubernetes', 'Ingress', 'K8s', 'Deployment'],
       lang: 'YAML', langColor: '#cb171e'
+    },
+    {
+      name: '3-tier-book-store-project-terraform',
+      url: 'https://github.com/Ritikrpati23032003/3-tier-book-store-project-terraform',
+      desc: 'Three-tier bookstore application fully provisioned with Terraform on AWS — web, app, and database layers with VPC, auto-scaling, load balancer, and RDS.',
+      tags: ['Terraform', 'AWS', '3-Tier', 'IaC'],
+      lang: 'HCL', langColor: '#844FBA'
     }
   ];
 
